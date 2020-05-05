@@ -1,7 +1,7 @@
 {
-  "name": "lambda-sandbox",
+  "name": "lambda-serverless-boilerplate",
   "version": "1.0.0",
-  "description": "Demo for AWS Lambda serverless",
+  "description": "Boilerplate for AWS Lambda serverless",
   "main": "index.js",
   "author": "Vinh Le <lethanhvinh95@gmail.com>",
   "license": "MIT",
@@ -9,9 +9,16 @@
   "scripts": {
     "dev": "sls offline start --lambdaPort 4500",
     "deploy": "sls deploy",
-    "invoke": "sls invoke local --function"
+    "invoke": "sls invoke local --function",
+    "invoke:watch": "sls invoke local --watch --function"
   },
   "devDependencies": {
-    "serverless-offline": "6.1.4"
+    "@babel/core": "7.9.6",
+    "@babel/plugin-transform-runtime": "7.9.6",
+    "@babel/preset-env": "7.9.6",
+    "babel-loader": "8.1.0",
+    "serverless-offline": "6.1.4",
+    "serverless-webpack": "5.3.2",
+    "webpack": "4.43.0"
   }
 }
