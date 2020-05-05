@@ -1,0 +1,17 @@
+{
+  "name": "lambda-sandbox",
+  "version": "1.0.0",
+  "description": "Demo for AWS Lambda serverless",
+  "main": "index.js",
+  "author": "Vinh Le <lethanhvinh95@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "sls offline start --lambdaPort 4500",
+    "deploy": "sls deploy",
+    "invoke": "sls invoke local --function"
+  },
+  "devDependencies": {
+    "serverless-offline": "6.1.4"
+  }
+}
